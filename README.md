@@ -1,3 +1,7 @@
-# Next.ts Boilerplate
+# Leaderboard mark2
 
-Light and choosable Next.js boilerplate with Typescript.
+🏆Leaderboard All in one version.
+
+## Reference
+
+https://github.com/qvil/nextts-boilerplate
