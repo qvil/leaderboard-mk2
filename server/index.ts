@@ -1,16 +1,6 @@
 import { GraphQLServer } from "graphql-yoga";
-
-const typeDefs = `
-  type Query {
-    hello(name: String): String!
-  }
-`;
-
-const resolvers = {
-  Query: {
-    hello: (_, { name }) => `Hello ${name || "World"}`
-  }
-};
+import typeDefs from "../graphql/typeDefs";
+import resolvers from "../graphql/resolvers";
 
 const PORT = 4000;
 const endpoint = "/graphql";
