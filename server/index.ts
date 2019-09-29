@@ -10,6 +10,8 @@ const options = {
 };
 
 server.start(options, () => {
-  console.log(`Server playground: http://localhost:${PORT}${playground}`);
-  console.log(`Server endpoint: http://localhost:${PORT}${endpoint}`);
+  const { port, playground, endpoint } = options;
+
+  console.log(`Server playground: http://localhost:${port}${playground}`);
+  console.log(`Server endpoint: http://localhost:${port}${endpoint}`);
 });
